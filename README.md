@@ -83,11 +83,22 @@ Why? If your app is later extended to allow the downloading of episode data for 
 - Download the episode data for the show "Game Of Thrones" from TV Maze API using this URL:
   https://api.tvmaze.com/shows/82/episodes
 
-- Save the file as `episodes.json` in your project's `src` directory, and import it into your code.
+- Save the file as `episodes.json` in your project's `src` directory
 
-- Edit your project's `tsconfig.json` add the following property to compilerOptions: `"resolveJsonModule": true`
+- If your JSON data is all on one long line, you can run the editor command `format document`* to make it more readable. (*from the vscode command palette, ctrl-shift-p / cmd-shift-p).
 
-- If your JSON data is all on one long line, you can run the editor command `format document` to make it more readable.   (e.g. from the vscode command palette).
+- Edit your project's `tsconfig.json` add the following property inside the section called compilerOptions: `"resolveJsonModule": true`
+
+- Import the JSON data into a variable in your App component as follows:
+
+```import episodes from './episodes.json'```
+
+- Check the import was successful by adding this after the import and checking the browser's console when the app loads.
+
+```
+console.log(`Imported ${episodes.length} episode(s)`);
+console.log(`First episode's name is ${episode[0].name}`);
+```
 
 - Use the following type when passing around an episode.  Note: It includes some intentional imperfections which you may need to address later in the exercise.
 
@@ -111,6 +122,8 @@ interface IEpisode {
   _links: { self: { href: string } };
 }
 ```
+
+If you have to pass around a list of such episodes the type will be `IEpisode[]`.
 
 ## Project Levels
 
