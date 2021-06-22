@@ -72,7 +72,9 @@ Why? If your app is later extended to allow the downloading of episode data for 
 
 ## Setup
 
-- Create a new React app on your machine called `tv-shows`. Make sure you set up with TypeScript not the JavaScript default.  [Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
+- Create a new React app called `tv-shows` by using the [Academy simplified CRA starter app](https://github.com/WeAreAcademy/academy-react-starter).   
+
+[Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
 
 - Publish the project repo on your github account.
 
@@ -87,7 +89,7 @@ Why? If your app is later extended to allow the downloading of episode data for 
 
 - If your JSON data is all on one long line, you can run the editor command `format document`* to make it more readable. (*from the vscode command palette, ctrl-shift-p / cmd-shift-p).
 
-- Edit your project's `tsconfig.json` add the following property inside the section called compilerOptions: `"resolveJsonModule": true`
+- Edit your project's `tsconfig.json` and ensure you have the following property inside the section called compilerOptions: `"resolveJsonModule": true`
 
 - Import the JSON data into a variable in your App component as follows:
 
@@ -99,6 +101,8 @@ Why? If your app is later extended to allow the downloading of episode data for 
 console.log(`Imported ${episodes.length} episode(s)`);
 console.log(`First episode's name is ${episode[0].name}`);
 ```
+
+Pass the episodes array to the relevant React component as a prop, for display.
 
 - Use the following type when passing around an episode.  Note: It includes some intentional imperfections which you may need to address later in the exercise.
 
