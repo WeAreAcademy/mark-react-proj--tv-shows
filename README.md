@@ -91,18 +91,18 @@ Why? If your app is later extended to allow the downloading of episode data for 
 
 - Edit your project's `tsconfig.json` and ensure you have the following property inside the section called compilerOptions: `"resolveJsonModule": true`
 
-- Import the JSON data into a variable in your App component as follows:
+- Import the JSON data into a variable at the top of your `App.tsx` as follows:
 
 ```import episodes from './episodes.json'```
 
-- Check the import was successful by adding this after the import and checking the browser's console when the app loads.
+- Check the import was successful by adding the following after the import and checking the browser's console when the app loads.
 
 ```
 console.log(`Imported ${episodes.length} episode(s)`);
 console.log(`First episode's name is ${episode[0].name}`);
 ```
 
-Pass the episodes array to the relevant React component as a prop, for display.
+- Once you've built a relevant React component to display the list of episodes, pass the `episodes` array to it as a prop.
 
 - Use the following type when passing around an episode.  Note: It includes some intentional imperfections which you may need to address later in the exercise.
 
