@@ -26,15 +26,15 @@ The episode data will come from [TV Maze](http://www.tvmaze.com/).
 
 ### Where do I get the episode data from?
 
-Initially, you will manually save data from their [API](http://www.tvmaze.com/api) to a JSON file in your project source.
+Initially, you will manually save data from their [API](http://www.tvmaze.com/api) (specifically [this link](https://api.tvmaze.com/shows/82/episodes)) to a JSON file in your project source.
 
-In later exercises you may be challenged to have your app dynamically `fetch` the data from the API.
+In later exercises you will be challenged to have your app dynamically `fetch` the data from the API.
 
 In all cases, you will be working with an array of objects, each of which represents an episode of a TV show.
 
 ### What does the episode data look like?
 
-Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showing an example of one such episode from the list.
+Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showing an example of ONE episode from the list.
 
 ```js
 {
@@ -64,19 +64,11 @@ Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showi
   }
 ```
 
-### Rules about the episode data
-
-You MUST NOT edit the static episode data. If you find that the data is unsuitable (e.g. fields are missing, or have unwanted characters), you should improve your own code so that _it_ can deal with such issues at run-time.
-
-Why? If your app is later extended to allow the downloading of episode data for any one of hundreds of possible shows, frequently updated, tidying the data by hand will NOT be a feasible solution!
-
 ## Setup
 
 - Create a new React app called `tv-shows` by using the [Academy simplified CRA starter app](https://github.com/WeAreAcademy/academy-react-starter).   
 
 [Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
-
-- Publish the project repo on your github account.
 
 - Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-tv-shows`.netlify.app.  [Netlify deployment guide for React apps](https://www.notion.so/weareacademy/How-to-deploy-a-React-app-to-free-Netlify-hosting-9e6ebd4dcb814cb483c34eb0f05ea96e)
 
@@ -128,6 +120,12 @@ interface IEpisode {
 ```
 
 If you have to pass around a list of such episodes the type will be `IEpisode[]`.
+
+### Rules about the episode data
+
+You MUST NOT edit the static episode data. If you find that the data is unsuitable (e.g. fields are missing, or have unwanted characters), you should improve your own code so that _it_ can deal with such issues at run-time.
+
+Why? If your app is later extended to allow the downloading of episode data for any one of hundreds of possible shows, frequently updated, tidying the data by hand will NOT be a feasible solution!  It's important to learn how to write code that can handle inconsistencies in data.
 
 ## Project Levels
 
