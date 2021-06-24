@@ -32,7 +32,7 @@ In later exercises you may be challenged to have your app dynamically `fetch` th
 
 In all cases, you will be working with an array of objects, each of which represents an episode of a TV show.
 
-### What does it look like?
+### What does the episode data look like?
 
 Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showing an example of one such episode from the list.
 
