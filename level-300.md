@@ -5,7 +5,7 @@
    1. The select input should list all episodes in the format: "S01E01 - Winter is Coming"
    1. When the user makes a selection from the list, they should then ONLY be shown the selected episode.  Be sure to provide a way for the user to see all episodes again (e.g. by clicking a button).
 1. Tidy up: if you haven't already then reconsider the episode summaries. The original data for the episode summaries contained html tags eg `<p>`. Remove these from the string before displaying the text.
-1. Handle missing images: currently you have an image for every episode but we cannot rely on that when we move to live data later. To test for this, set `image` to `null` for an episode in your episodes json file and adapt your app to correctly handle this scenario.
+1. Handle missing images: currently your data specifies an image for every episode but you will find you cannot rely on that when you move to live data later. For example, [here is the data from The Simpsons](https://api.tvmaze.com/shows/83/episodes) - if you search through it for `null` you'll sometimes see that future or very recent episodes have `image: null`.  Adapt your app to correctly handle this situation and use appropriate data to check it works.
 
 ## Example screenshot of Episode Selector
 
