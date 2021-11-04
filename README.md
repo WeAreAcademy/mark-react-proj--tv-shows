@@ -91,7 +91,7 @@ Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showi
 
 ```
 console.log(`Imported ${episodes.length} episode(s)`);
-console.log(`First episode's name is ${episode[0].name}`);
+console.log(`First episode's name is ${episodes[0].name}`);
 ```
 
 - Once you've built a relevant React component to display the list of episodes, pass the `episodes` array to it as a prop.
