@@ -9,7 +9,7 @@
 1. Add a navigation link to enable the user to return to the "shows listing"
    1. When this is clicked, the episodes listing should be hidden
 1. Provide a free-text show search through show names, genres, and summary texts.
-1. Ensure that your episode search and episode selector controls still work correctly when you switch from shows listing to episodes listing and back.
+1. Ensure that your episode search (and, if you have one, episode selector) controls still work correctly when you switch from shows listing to episodes listing and back.
 
 Continue to get the list of shows the same way you did in level 400. (You do not need to fetch it.)
 
