@@ -7,6 +7,7 @@
    1. The display should update **immediately** after each keystroke changes the input.
    1. Display how many episodes match the current search
    1. If the search box is cleared, **all** episodes should be shown.
+   1. Extract this episode-matching functionality into a pure function and create unit tests for it with jest.  The function should have no dependency on React.
 
 ## Example screenshot of search
 
