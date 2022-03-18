@@ -6,7 +6,7 @@
 1. Add a `select` input which allows you to choose which show you are interested in
    1. When a show is selected, your app should display the episodes for that show as per the earlier levels of this challenge, except that it should first `fetch` the episode list from the API - see below
    1. You can get a large list of shows from the API endpoint: `http://api.tvmaze.com/shows?page=1`.  It is recommended  that you store these results in a local file (e.g. shows.json).
-   1. Ensure that your search and episode selector controls still work correctly when you switch shows.
+   1. Ensure that your search (and, if you have it, episode selector) controls still work correctly when you switch shows.
    1. This show select must list shows in alphabetical order, case-insensitive.
 
 ## Note on fetching episode lists
