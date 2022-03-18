@@ -1,11 +1,18 @@
-# Level 300 - Add an Episode Selector
+# Level 300 - Minimal features for level 300
 
-1. Complete all requirements from level 200
+1. Complete all minimal requirements from level 200
+1. Tidy up the summaries: the original data for the episode summaries contained html tags such as `<p>`.  If you haven't already done so, have your _code_ remove these from the string before displaying it on screen.  Do **not** try to fix these by manually editing the data file(s)!
+   1. Ensure this summary-cleaning functionality is extracted to a pure function and add a unit test for it.
+3. Ensure the app works with different data.  Change the data file (at least temporarily) so that it is [the data from The Simpsons](https://api.tvmaze.com/shows/83/episodes).  Then, ensure your app still runs fine with this specific data.  If it doesn't, you'll need to diagnose the cause and change your code to resolve the problem.
+   1. (Optional) Write a test with react testing library to check that your app can now correctly display data which was previously causing a problem.
+
+
+### Optional: Add an Episode Selector
+If you're doing this project in a single week, skip this optional functionality.
+
 1. Add a `select` input which allows you to jump quickly to an episode:
    1. The select input should list all episodes in the format: "S01E01 - Winter is Coming"
    1. When the user makes a selection from the list, they should then ONLY be shown the selected episode.  Be sure to provide a way for the user to see all episodes again (e.g. by clicking a button).
-1. Tidy up: if you haven't already then reconsider the episode summaries. The original data for the episode summaries contained html tags eg `<p>`. Remove these from the string before displaying the text.
-1. Handle missing images: currently your data specifies an image for every episode but you will find you cannot rely on that when you move to live data later. For example, [here is the data from The Simpsons](https://api.tvmaze.com/shows/83/episodes) - if you search through it for `null` you'll sometimes see that future or very recent episodes have `image: null`.  Adapt your app to correctly handle this situation and use appropriate data to check it works.
 
 ## Example screenshot of Episode Selector
 
