@@ -3,7 +3,7 @@
 1. Complete all minimal requirements from level 200
 1. Tidy up the summaries: the original data for the episode summaries contained html tags such as `<p>`.  If you haven't already done so, have your _code_ remove these from the string before displaying it on screen.  Do **not** try to fix these by manually editing the data file(s)!
    1. Ensure this summary-cleaning functionality is extracted to a pure function and add a unit test for it.
-3. Ensure the app works with different data.  Change the data file (at least temporarily) so that it is [the data from The Simpsons](https://api.tvmaze.com/shows/83/episodes).  Then, ensure your app still runs fine with this specific data.  If it doesn't, you'll need to diagnose the cause and change your code to resolve the problem.
+3. Ensure the app works with different data.  Change the data file (at least temporarily) so that it is [the data from The Simpsons](https://api.tvmaze.com/shows/83/episodes).  Then, ensure your app still runs fine with this specific data.  If it doesn't, you'll need to diagnose the cause and change your code to resolve the problem.    (Once you're close to a solution, it's possible you'll want to read about [TypeScript type guards and type predicates](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)).
    1. (Optional) Write a test (e.g. with react testing library) to check that your app can now correctly display data which was previously causing a problem.
 
 
