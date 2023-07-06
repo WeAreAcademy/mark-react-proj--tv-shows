@@ -29,6 +29,10 @@ Here is one example layout.
 
 ## Play nice - a note on using `fetch` during development
 
-Be _careful_ when developing with fetch. By default, every time you make a small change to your app it will be restarted by live server - if you are fetching JSON on page load, the JSON will be downloaded again and again. These frequent HTTP requests may lead to the API permanently banning your IP address from further requests, or "throttling" it for some time. Worse, if they don't, they may cause performance issues for the API service we are using.
+Be _careful_ when developing with fetch. By default, every time you make a small change to your app it will be restarted by live server - if you are fetching JSON on page load, the JSON will be downloaded again and again. These frequent HTTP requests may lead to the API permanently banning your IP address from further requests, or "throttling" it for some time. Worse, if they _don't_ get your machine banned or throttled, they may cause performance issues for the (freely provided) API service we are using.  In all cases, it's just very bad etiquette to generate lots of unnecessary traffic.
+
+Monitor the requests your app is making by opening the network tab in the devtools and referring to it as you develop and use your app.
+
+You could also ensure that a console log message is emitted (or a counter updated) every time you make a request with fetch or axios.
 
 [<< level 350](./level-350.md) - [top](./readme.md) - [level 500 >>](./level-500.md)
