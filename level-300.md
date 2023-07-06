@@ -8,7 +8,7 @@
 
 
 ### Optional: Add an Episode Selector
-If you're doing this project in a single week, skip this optional functionality.
+If you're doing this project in a single week, skip this optional functionality.  In level 400 you will work with a select input.
 
 1. Add a `select` input which allows you to jump quickly to an episode:
    1. The select input should list all episodes in the format: "S01E01 - Winter is Coming"
