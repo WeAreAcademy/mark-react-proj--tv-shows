@@ -1,6 +1,10 @@
 # Level 999 - Misc ideas for further work
 
-This is not really a level. Instead here are some ideas for consideration for further work. You are free to choose which of these you pursue.
+This is not really a level at all. 
+
+Instead here are some ideas for consideration for further work. 
+
+You are free to choose which of these you pursue - just be careful not to let one team member excitedly bring further complexity into an app that is already "enough" for other team members.
 
 - Add cast listing to your show listing, http://api.tvmaze.com/shows/1?embed=cast
 - Add cast listing to your episode listing, http://api.tvmaze.com/shows/1?embed=cast
@@ -12,14 +16,16 @@ This is not really a level. Instead here are some ideas for consideration for fu
 - Make the browser's back and forward buttons navigate through your changed views (see History.pushState()).
 - Allow user to mark "favourite" shows
 - Allow user to store notes on each episode
-- Use local storage to cache the above, and perhaps also to cache episode lists
+- Use local storage to cache the above
 - Paginate through results with a "load more" button - don't load 100s of episodes at a time.
-- Handle errors from fetch
+- Handle errors gracefully from fetch, letting the user know that something went wrong outwith their control, and that they should try again later (or to select a different show, if appropriate)
 - Responsive design
 - Semantic HTML
 - Accessibility
 - Style your page to fit the theme of the show (colours, typography, background images, etc). Commit to one show to do this.
-- Season selector (see screenshot below)
+- Add voice control for show and episode selection
+- Replace your use of fetch or axios with [react-query](https://tanstack.com/query/)
+- Add a season selector (see screenshot below)
 
 Screenshot of a possible season selector layout for a specific show - you would click to load episodes for the season.
 
