@@ -63,11 +63,13 @@ Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showi
 
 ## Setup
 
-- Create a new React app called `tv-shows` by using the [Academy simplified CRA starter app](https://github.com/WeAreAcademy/academy-react-starter).   
+- Create a new React app called `tv-shows` by:
+    - either using the [Academy CRA React starter](https://github.com/WeAreAcademy/academy-react-starter).
+    - or (if feeling adventurous) using the faster, experimental [Academy Vite React starter](https://github.com/WeAreAcademy/academy-react-starter-vite)
 
 [Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
 
-- Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-tv-shows`.netlify.app.  [Netlify deployment guide for React apps](https://www.notion.so/weareacademy/How-to-deploy-a-React-app-to-free-Netlify-hosting-9e6ebd4dcb814cb483c34eb0f05ea96e)
+- Set up continuous deployment of your app to [Netlify](https://netlify.app/) as, for example, `academy-yourteamname-tv-shows`.netlify.app.  [Netlify deployment guide for React apps](https://www.notion.so/weareacademy/How-to-deploy-a-React-app-to-free-Netlify-hosting-9e6ebd4dcb814cb483c34eb0f05ea96e)
 
 ### Setup - get the episode data:
 
