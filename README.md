@@ -63,15 +63,15 @@ Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showi
 
 ## Setup
 
-- Create a new React app called `tv-shows` by:
-    - either using the [Academy CRA React starter](https://github.com/WeAreAcademy/academy-react-starter).
-    - or (if feeling adventurous) using the faster, experimental [Academy Vite React starter](https://github.com/WeAreAcademy/academy-react-starter-vite)
-
-[Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
+- Create a new React app called `my-team-tv-shows` by:
+    - starting with this JavaScript React template (vite-based)[tv-shows-react-js-starter](https://github.com/WeAreAcademy/tv-shows-react-js-starter) (project-specific)
+    - or, for typescript: [Academy Vite React starter](https://github.com/WeAreAcademy/academy-react-starter-vite) (general starter).
+      - [Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
 
 - Set up continuous deployment of your app to [Netlify](https://netlify.app/) as, for example, `academy-yourteamname-tv-shows`.netlify.app.  [Netlify deployment guide for React apps](https://www.notion.so/weareacademy/How-to-deploy-a-React-app-to-free-Netlify-hosting-9e6ebd4dcb814cb483c34eb0f05ea96e)
 
 ### Setup - get the episode data:
+You can ignore these instructions if you are using a starter project which already includes data file(s) in `src/data`.
 
 - Download the episode data for the show "Game Of Thrones" from TV Maze API using this URL:
   https://api.tvmaze.com/shows/82/episodes
@@ -80,7 +80,7 @@ Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showi
 
 - If your JSON data is all on one long line, you can run the editor command `format document`* to make it more readable. (*from the vscode command palette, ctrl-shift-p / cmd-shift-p).
 
-- Edit your project's `tsconfig.json` and ensure you have the following property inside the section called compilerOptions: `"resolveJsonModule": true`
+- TypeScript only: Edit your project's `tsconfig.json` and ensure you have the following property inside the section called compilerOptions: `"resolveJsonModule": true`.
 
 - Import the JSON data into a variable at the top of your `App.tsx` as follows:
 
@@ -95,7 +95,7 @@ console.log(`First episode's name is ${episodes[0].name}`);
 
 - Once you've built a relevant React component to display the list of episodes, pass the `episodes` array to it as a prop.
 
-- Use the following type when passing around an episode.  Note: It includes some intentional imperfections which you may need to address later in the exercise.
+- TypeScript only: Use the following type when passing around an episode.  Note: It includes some intentional imperfections which you may need to address later in the exercise.
 
 ```
 interface IEpisode {
@@ -129,7 +129,9 @@ Why? If your app is later extended to allow the downloading of episode data for 
 
 ## Project Levels
 
-This project is broken into various levels:
+This project is broken into various levels.  Unless otherwise instructed, work through each to completion before starting work on features from subsequent levels.
+
+It's up to your team to discuss and break down the requirement into tickets/issues for your project kanban board (Jira).
 
 - [level 100](./level-100.md)
 - [level 200](./level-200.md)
