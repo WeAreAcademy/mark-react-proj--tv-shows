@@ -6,7 +6,7 @@
 
 ## Requirements
 
-1. Complete all requirements from level 300
+1. Complete all mandatory requirements from level 300
 1. When your page loads, it must load the episodes (for the SAME show) live from TVMaze API, using `fetch` or axios' `get`, instead of importing from a static local JSON file. (See below for the API "endpoint" (URL) to fetch.)
 1. Your search (and episode selector, if you have one) must continue to work as specified in level 300.
 1. Your page MUST NOT re-fetch the episodes every time the user types a character into your search field!  You should use the network tab in your browser's devtools to monitor requests being made in order to verify this is not happening.
