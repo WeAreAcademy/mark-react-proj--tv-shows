@@ -2,7 +2,7 @@
 
 (This is a short level to help you transition to using live data.)
 
-**Pre-req**: For this level you will need to use `fetch` (or `axios`) to `GET` JSON content from an API.
+**Pre-req**: For this level you will need to be able to use `fetch` (or `axios`) to `GET` JSON content from an API.
 
 ## Requirements
 
